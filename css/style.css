@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2e; /* Mocha base */
+    color: #cdd6f4; /* Mocha text */
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #89b4fa; /* Mocha blue */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #b4befe; /* Mocha lavender */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.site-title {
+    font-size: 80px;
+    font-weight: 200;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    color: #f5c2e7; /* Mocha pink */
+}
+
+.content {
+    max-width: 800px;
+}
+
+.description {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+.description a {
+    color: #89dceb; /* Mocha sky */
+    text-decoration: none;
+    border-bottom: 1px solid #89dceb;
+    transition: all 0.3s ease;
+}
+
+.description a:hover {
+    color: #94e2d5; /* Mocha teal */
+    border-color: #94e2d5;
+}
+
+.contact {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 200;
+    margin-top: 40px;
+}
+
+.contact a {
+    color: #89dceb; /* Mocha sky */
+    text-decoration: none;
+    border-bottom: 1px solid #89dceb;
+    transition: all 0.3s ease;
+}
+
+.contact a:hover {
+    color: #94e2d5; /* Mocha teal */
+    border-color: #94e2d5;
+}
+
+code {
+    font-family: monospace;
+    background-color: #313244; /* Mocha surface0 */
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #f38ba8; /* Mocha red */
+}
+
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 60px;
+        margin-top: 60px;
+    }
+    
+    .description, .contact {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    
+    .description, .contact {
+        font-size: 18px;
+    }
+    
+    main {
+        padding: 0 20px;
+    }
+}
